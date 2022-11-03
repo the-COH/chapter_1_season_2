@@ -67,15 +67,15 @@ The COH is pleased to announce the following judges for Chapter 1, Season 2:
 
 ## **Important Dates**
 
-**11/1** – Registration Ongoing at thecoh.build
-**11/2** – Begin Building
-**11/3** – Mentorship Session 1 (Recommended), Open Hours 7-8pm UTC, [**Add to Calendar**](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjdzbTRobXVqMTZwaDFxZjVzdjhwOTRxZXUgY18xNmYwYzVlNWQ2MjdmMzVhODQ3MmExMTkyNjZhNzUzYjMxOWYxMmViZmM5YTRhMTYxZWM4N2FkYjJlYWI0NjNkQGc&tmsrc=c_16f0c5e5d627f35a8472a119266a753b319f12ebfc9a4a161ec87adb2eab463d%40group.calendar.google.com)
-**11/4** – Mentorship Session  2 (Recommended), Open Hours 4-5pm UTC, [**Add to Calendar**](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=Nmx1MDhpbWMxcDNjcGpkbTUxcGo1OXA1a2cgY18xNmYwYzVlNWQ2MjdmMzVhODQ3MmExMTkyNjZhNzUzYjMxOWYxMmViZmM5YTRhMTYxZWM4N2FkYjJlYWI0NjNkQGc&tmsrc=c_16f0c5e5d627f35a8472a119266a753b319f12ebfc9a4a161ec87adb2eab463d%40group.calendar.google.com)
-**11/7** – Mentorship Session  3 (Recommended), Open Hours 10-11pm UTC, [**Add to Calendar**](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MnY3aTlzZDlsMTBkcGc1anNpNWwzMDM1cGMgY18xNmYwYzVlNWQ2MjdmMzVhODQ3MmExMTkyNjZhNzUzYjMxOWYxMmViZmM5YTRhMTYxZWM4N2FkYjJlYWI0NjNkQGc&tmsrc=c_16f0c5e5d627f35a8472a119266a753b319f12ebfc9a4a161ec87adb2eab463d%40group.calendar.google.com)
-**11/8** – Share Project Title, Summary, & Progress Update with COH organizers
-**11/18** – Projects Due. Must submit pre-recorded video and PR to this repo by 11:59pm UTC.
-**11/20** – Judging Ceremony at 6pm UTC
-**11/20** – Winners Announced (TBD)
+**11/1** – Registration Ongoing at thecoh.build  
+**11/2** – Begin Building  
+**11/3** – Mentorship Session 1 (Recommended), Open Hours 7-8pm UTC, [**Add to Calendar**](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjdzbTRobXVqMTZwaDFxZjVzdjhwOTRxZXUgY18xNmYwYzVlNWQ2MjdmMzVhODQ3MmExMTkyNjZhNzUzYjMxOWYxMmViZmM5YTRhMTYxZWM4N2FkYjJlYWI0NjNkQGc&tmsrc=c_16f0c5e5d627f35a8472a119266a753b319f12ebfc9a4a161ec87adb2eab463d%40group.calendar.google.com)  
+**11/4** – Mentorship Session  2 (Recommended), Open Hours 4-5pm UTC, [**Add to Calendar**](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=Nmx1MDhpbWMxcDNjcGpkbTUxcGo1OXA1a2cgY18xNmYwYzVlNWQ2MjdmMzVhODQ3MmExMTkyNjZhNzUzYjMxOWYxMmViZmM5YTRhMTYxZWM4N2FkYjJlYWI0NjNkQGc&tmsrc=c_16f0c5e5d627f35a8472a119266a753b319f12ebfc9a4a161ec87adb2eab463d%40group.calendar.google.com)  
+**11/7** – Mentorship Session  3 (Recommended), Open Hours 10-11pm UTC, [**Add to Calendar**](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MnY3aTlzZDlsMTBkcGc1anNpNWwzMDM1cGMgY18xNmYwYzVlNWQ2MjdmMzVhODQ3MmExMTkyNjZhNzUzYjMxOWYxMmViZmM5YTRhMTYxZWM4N2FkYjJlYWI0NjNkQGc&tmsrc=c_16f0c5e5d627f35a8472a119266a753b319f12ebfc9a4a161ec87adb2eab463d%40group.calendar.google.com)  
+**11/8** – Share Project Title, Summary, & Progress Update with COH organizers  
+**11/18** – Projects Due. Must submit pre-recorded video and PR to this repo by 11:59pm UTC.  
+**11/20** – Judging Ceremony at 6pm UTC  
+**11/20** – Winners Announced (TBD)  
 
 ## **Project Requirements** ## 
 
