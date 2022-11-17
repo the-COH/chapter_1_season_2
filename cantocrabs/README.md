@@ -83,7 +83,7 @@ Canto Crabs Casino currently presents the roulette game as a submission for the 
 
 - More games like slots and other casino games added to the Crab Casino
 
-![Crabs Sneak Peek](https://files.catbox.moe/5p8ti5.gif)
+![Crabs Sneak Peek](https://files.catbox.moe/8flj1s.gif)
 
 Our Website: https://cantocrabs.com/
 
