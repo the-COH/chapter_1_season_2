@@ -1,0 +1,131 @@
+export const ABI = [{
+        inputs: [{
+            internalType: "address",
+            name: "adr",
+            type: "address",
+        }, ],
+        name: "authorize",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [],
+        stateMutability: "nonpayable",
+        type: "constructor",
+    },
+    {
+        anonymous: false,
+        inputs: [{
+                indexed: true,
+                internalType: "uint256",
+                name: "betId",
+                type: "uint256",
+            },
+            {
+                indexed: false,
+                internalType: "uint256",
+                name: "amount",
+                type: "uint256",
+            },
+            {
+                indexed: false,
+                internalType: "address",
+                name: "player",
+                type: "address",
+            },
+            {
+                indexed: false,
+                internalType: "uint256",
+                name: "result",
+                type: "uint256",
+            },
+        ],
+        name: "GameBet",
+        type: "event",
+    },
+    {
+        anonymous: false,
+        inputs: [{
+            indexed: false,
+            internalType: "address",
+            name: "owner",
+            type: "address",
+        }, ],
+        name: "OwnershipTransferred",
+        type: "event",
+    },
+    {
+        inputs: [{
+                internalType: "uint256",
+                name: "number",
+                type: "uint256",
+            },
+            {
+                internalType: "uint256",
+                name: "betType",
+                type: "uint256",
+            },
+        ],
+        name: "placeBet",
+        outputs: [{
+            internalType: "uint256",
+            name: "",
+            type: "uint256",
+        }, ],
+        stateMutability: "payable",
+        type: "function",
+    },
+    {
+        inputs: [{
+            internalType: "address payable",
+            name: "adr",
+            type: "address",
+        }, ],
+        name: "transferOwnership",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [{
+            internalType: "address",
+            name: "adr",
+            type: "address",
+        }, ],
+        name: "unauthorize",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [{
+            internalType: "address",
+            name: "adr",
+            type: "address",
+        }, ],
+        name: "isAuthorized",
+        outputs: [{
+            internalType: "bool",
+            name: "",
+            type: "bool",
+        }, ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [{
+            internalType: "address",
+            name: "account",
+            type: "address",
+        }, ],
+        name: "isOwner",
+        outputs: [{
+            internalType: "bool",
+            name: "",
+            type: "bool",
+        }, ],
+        stateMutability: "view",
+        type: "function",
+    },
+];
