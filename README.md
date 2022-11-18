@@ -2,6 +2,9 @@
 
 we made you a minipent. 
 
+https://canto.minipent.xyz
+
+
 this means you now have a database, which you can post data to via a cms, and you can download and back up with your org. so, if your team all download the minipent db (we've prepared the scripts), regularly, it's a distributed system. 
 
 here is the video:
