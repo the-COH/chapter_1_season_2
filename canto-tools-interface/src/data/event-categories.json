@@ -1,0 +1,18 @@
+{
+  "hackathons": {
+    "id": "hackathons",
+    "name": "🛠️ Hackathons"
+  },
+  "irlevent": {
+    "id": "irlevent",
+    "name": "🤝 In-person Events"
+  },
+  "nftmints": {
+    "id": "nftmints",
+    "name": "🎨 NFT Mints"
+  },
+  "onlineevents": {
+    "id": "onlineevents",
+    "name": "📷 Online Events"
+  }
+}

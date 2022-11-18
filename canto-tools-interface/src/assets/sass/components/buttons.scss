@@ -1,0 +1,32 @@
+.btn {
+    border-radius: 0;
+    border-width: 2px;
+
+    &.btn-dark {
+        background-color: #111;
+        border-color: rgba(255, 255, 255, .1);
+
+        &:hover {
+            background-color: #000;
+            border-color: rgba(255, 255, 255, .15);
+        }
+    }
+
+    &.btn-primary {
+        background-color: #000;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #06fc99;
+        border-color: #06fc99;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:active {
+            background-color: darken(#06fc99, 20%);
+            color: #000;
+            border-color: darken(#06fc99, 20%);
+        }
+    }
+}
