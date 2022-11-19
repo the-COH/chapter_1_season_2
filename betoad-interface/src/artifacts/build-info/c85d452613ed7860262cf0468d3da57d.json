@@ -1,0 +1,151 @@
+{
+  "id": "c85d452613ed7860262cf0468d3da57d",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.8.11",
+  "solcLongVersion": "0.8.11+commit.d7f03943",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/interface/ISettleable.sol": {
+        "content": "//SPDX-License-Identifier: Unlicense\npragma solidity ^0.8.0;\n\ninterface ISettleable {\n    function settleAll() external;\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 1000
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/interface/ISettleable.sol": {
+        "ISettleable": {
+          "abi": [
+            {
+              "inputs": [],
+              "name": "settleAll",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "functionDebugData": {},
+              "generatedSources": [],
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "deployedBytecode": {
+              "functionDebugData": {},
+              "generatedSources": [],
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "methodIdentifiers": {
+              "settleAll()": "a015aefe"
+            }
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"settleAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interface/ISettleable.sol\":\"ISettleable\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"contracts/interface/ISettleable.sol\":{\"keccak256\":\"0x898a57cda695ebc5a0df27b29ed769aab4d203bce5e2a0a8593ef6b308b4a097\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://3783c112b73a0d27b40e1d444dbadaf8b0d7f80af45926543ef7c7e0527327ef\",\"dweb:/ipfs/QmYgWXhTz6FjerZDLTtS4zmFvsNnsVWnHoFh9jn3nAau9E\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "contracts/interface/ISettleable.sol": {
+        "ast": {
+          "absolutePath": "contracts/interface/ISettleable.sol",
+          "exportedSymbols": {
+            "ISettleable": [
+              5
+            ]
+          },
+          "id": 6,
+          "license": "Unlicense",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.8",
+                ".0"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "37:23:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "canonicalName": "ISettleable",
+              "contractDependencies": [],
+              "contractKind": "interface",
+              "fullyImplemented": false,
+              "id": 5,
+              "linearizedBaseContracts": [
+                5
+              ],
+              "name": "ISettleable",
+              "nameLocation": "72:11:0",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "functionSelector": "a015aefe",
+                  "id": 4,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "settleAll",
+                  "nameLocation": "99:9:0",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 2,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "108:2:0"
+                  },
+                  "returnParameters": {
+                    "id": 3,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "119:0:0"
+                  },
+                  "scope": 5,
+                  "src": "90:30:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "external"
+                }
+              ],
+              "scope": 6,
+              "src": "62:60:0",
+              "usedErrors": []
+            }
+          ],
+          "src": "37:86:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

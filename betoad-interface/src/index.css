@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "StardosStencil-Bold";
+    src: url(./assets/fonts/StardosStencil-Bold.ttf);
+  }
+  @font-face {
+    font-family: "StardosStencil-Regular";
+    src: url(./assets/fonts/StardosStencil-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: "Montserrat-Italic";
+    src: url(./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: "IBMPlexSans-Bold";
+    src: url(./assets/fonts/IBMPlexSans-Bold.ttf);
+  }
+  @font-face {
+    font-family: "IBMPlexSans-ExtraLight";
+    src: url(./assets/fonts/IBMPlexSans-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: "IBMPlexSans-Light";
+    src: url(./assets/fonts/IBMPlexSans-Light.ttf);
+  }
+  @font-face {
+    font-family: "IBMPlexSans-Medium";
+    src: url(./assets/fonts/IBMPlexSans-Medium.ttf);
+  }
+  @font-face {
+    font-family: "IBMPlexSans-Regular";
+    src: url(./assets/fonts/IBMPlexSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: "IBMPlexSans-SemiBold";
+    src: url(./assets/fonts/IBMPlexSans-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "IBMPlexSans-Thin";
+    src: url(./assets/fonts/IBMPlexSans-Thin.ttf);
+  }
+  body {
+    background-color: #242424;
+  }
+}
+
+@layer utilities {
+  /* TEXT-SHADOW */
+  .TEXT-SHADOW-8 {
+    text-shadow: 0px 0px 15px #ffffff;
+  }
+  .TEXT-SHADOW-GLOW-1 {
+    text-shadow: 0px 0px 7px #ffd298;
+  }
+  .TEXT-SHADOW-GLOW-1-d {
+    text-shadow: 0px 0px 7px #985600;
+  }
+}
