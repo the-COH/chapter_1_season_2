@@ -2,9 +2,12 @@
 
 NFT Card game 
 
-contract deployed in canto mainnet 
+contract deployed on canto mainnet 
+
 token address ALCHI : 0xA99C4A1438c1200f64b47D2CC30f1e702577604c
+
 NFTGame : 0x97C534CdEa1aA1730944ae27A3A11431C4e038Eb
+
 NFT marcetplace: 0x79CA4A4DDF4aff4EA91E5F0c678bF36d5A19Da7e
 
 ## Introduction
@@ -13,7 +16,7 @@ this project is a submission to CANTO Hackathon,
 
 ### Demo: 
 
-[![DEMO](https://img.youtube.com/vi/A-5i950k3kQ/0.jpg)](https://www.youtube.com/watch?v=A-5i950k3kQ)
+[![DEMO](https://img.youtube.com/vi/A-5i950k3kQ/0.jpg)](https://youtu.be/YMkCLxXKiy0)
 
 
 # Little Alchemy
@@ -52,7 +55,7 @@ to try the demo in your localhost :
 - clone this repo 
 
 ```
-git clone 
+git clone https://github.com/azizyano/chapter_1_season_2_openALCHI.git
 
 cd OpenAlchi
 
