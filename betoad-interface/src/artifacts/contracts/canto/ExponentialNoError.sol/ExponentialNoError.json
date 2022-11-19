@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ExponentialNoError",
+  "sourceName": "contracts/canto/ExponentialNoError.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220820f3b065043f7cae96c13b1fd7af97315e9a64f176f04df69929228b4b5eebb64736f6c634300080b0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220820f3b065043f7cae96c13b1fd7af97315e9a64f176f04df69929228b4b5eebb64736f6c634300080b0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
