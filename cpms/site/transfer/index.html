@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>CPMS Gas Station</title>
+</head>
+<body>
+    <nav>
+        <div class="navcont">
+            <a href="/" class="nav_left">
+                <img src="/assets/images/bird_feet.png" class="nav_logo"/>
+                <span id="logoTitle"> Canto Public <br> Messaging Service </span>
+            </a>
+
+            <div class="nav_buttons">
+                <div class="nav_transfer_buttons">
+                    <div id="inboxBtnwrap" class="nav_button inbox" onclick="connectWallet()">
+                        <div id="inboxStatus" onclick="showOptions()">Connect</div>
+                        <div id="inboxCount">10</div>
+                    </div>
+                    <a href="/"class="nav_button">Write</a>
+                    <a href="/transfer"class="nav_button">Transfer</a>
+                </div>
+                <div class="nav_utility_buttons">
+                    <a href="/gas" class="nav_button">Gas Station</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="maincontainer">
+        <div class="main">
+                <div class="main_desc_mint">
+                    
+                    <div class="main_title">Transfer An Asset On Canto</div>
+                    <div id="transferConnectWallet" onclick="showOptions()">
+                        <div class="roundedButton button" style="margin:auto">Connect Your Wallet</div>
+                    </div>
+                    <div id="transferChoice">
+                        <div class="transferChoice_title">Choose asset type</div>
+                        <div class="assetOptions">
+                            <div onclick="showCoins()"  class="roundedButton button" style="margin:5px">Coins</div>
+                            <div onclick="showNFTs()"  class="roundedButton button" style="margin:5px">NFTs</div>
+                        </div>
+                    </div>
+                    <div class="transferWrap">
+
+                        Select an NFT to transfer:
+
+                        <div class="mintBirdGrid">
+                            <div onclick="selectNFT(this, 1)" class="transfernft">
+                              <img src="/assets/images/nfts/1.gif" class="newstamp"></img>
+                            </div>  
+                            <div onclick="selectNFT(this, 2)" class="transfernft">
+                              <img src="/assets/images/nfts/2.gif" class="newstamp"></img>
+                            </div>  
+                            <div onclick="selectNFT(this, 3)" class="transfernft">
+                                <img src="/assets/images/nfts/3.gif" class="newstamp"></img>
+                            </div>  
+                            <div onclick="selectNFT(this, 4)" class="transfernft">
+                                <img src="/assets/images/nfts/4.png" class="newstamp"></img>
+                            </div>  
+                        </div>
+                        
+                        <div onclick="transferNft()" class="roundedButton button" style="margin: 10px auto;">Transfer!</div>
+                    </div>
+                    <div class="transferWrap2s">
+                        
+                        Select an asset to transfer:
+                        <div class="dropdownwrap">
+                            <div class="dropdown">
+                                <div class="dropdown__trigger" id="pickAsset">Pick an Asset</div>
+                                <div class="dropdown__content">
+                                    <div class="dropdown__elm" onclick="showCoin('CANTO')">CANTO</div>
+                                    <div class="dropdown__elm" onclick="showCoin('CINU')">CINU</div>
+                                </div>
+                            </div>
+                            <div class="transferReady">
+                                <div class="stats">
+                                    <div class="amountwrap">
+                                        Amount: 
+                                        <input type="text" class="amountToSend">
+                                    </div>
+                                    <div id="amountAvailable">
+                                        Available: $29140 
+                                    </div>
+                                </div>
+                                <div onclick="transferCoin()" class="roundedButton disabled button" style="margin: 10px auto;" id="sendcoins">Send</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pricetag" style="top:10px;right:10px;line-height: 16px;color: #00000091;border-color:#00000091;">3 Canto!</div>
+                </div>
+            </div>
+
+        </div>
+    </div>   
+        
+    <div id="gasmodal_wrap" class="darkmodalwrap">
+        <div class="simplemodal_message">
+            <img src="/assets/images/logo_mouth.png" alt="message" style="margin-right:16px">
+            <div id="gasmessage">Requesting gas...</div>
+        </div>
+    </div>
+    <div id="mintmodal_wrap" class="darkmodalwrap">
+        <div class="simplemodal_message">
+            <img src="/assets/images/logo_mouth.png" alt="message" style="margin-right:16px">
+            <div id="mintmessage">Requesting gas...</div>
+        </div>
+    </div>
+    <script src="/assets/js/transfer.js"></script>
+
+</body>
+</html>

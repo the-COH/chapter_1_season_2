@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>CPMS Gas Station</title>
+</head>
+<body>
+    <nav>
+        <div class="navcont">
+            <a href="/" class="nav_left">
+                <img src="/assets/images/bird_feet.png" class="nav_logo"/>
+                <span id="logoTitle"> Canto Public <br> Messaging Service </span>
+            </a>
+
+            <div class="nav_buttons">
+                <div class="nav_transfer_buttons">
+                    <div id="inboxBtnwrap" class="nav_button inbox" onclick="connectWallet()">
+                        <div id="inboxStatus" onclick="showTransferInputBtn()">Connect</div>
+                        <div id="inboxCount">10</div>
+                    </div>
+                    <a href="/"class="nav_button">Write</a>
+                    <a href="/transfer"class="nav_button">Transfer</a>
+                </div>
+                <div class="nav_utility_buttons">
+                    <a href="/gas" class="nav_button">Gas Station</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="maincontainer">
+        <div class="main">
+            <div class="main_presentation">
+                <div class="main_desc_transfer_wrap" >
+                <div class="main_desc_transfer" >
+                    <div class="pricetag" style="top:10px;right:10px;line-height: 16px;color: #00000091;border-color:#00000091;">FREE!</div>
+                    <div class="main_title">CPMS Gas Station</div>
+                    The station provides each wallet  
+                    <br>
+                    for up to 2 fills (.5 $CANTO each)
+                    <br><br>
+                    Once max within a 24 hour period.
+                    
+                <div onclick="showTransferInputBtn()" id="transferConnectWallet">
+                    <div class="roundedButton button" style="margin:auto">Connect Your Wallet</div>
+                </div>
+                <div class="transferInputWrap">
+                    <div class="transferinput_input">
+                        <div id="recipientFinalTitle" class="smalltitle">Gas Fills Left: <span id="gasLeft" style="margin-left: 4px;" >2</span></div>
+                    </div>
+                    <div id="transferBtn" onclick="getGas()" class="sendMessageBtn button noselect" style="font-size: 14px;height:unset">Get Gas</div>
+                </div>
+                </div>
+            </div>
+                <div class="main_desc_mint">
+                    <div class="main_title">Provide Gas for the Community</div>
+                    To keep the station fueling, please participate in
+                    <br>
+                    our signature NFT mint (no supply cap) for 50 $CANTO each.
+                    <br>
+                    <div class="mintBirdGrid">
+                        <div onclick="selectBird(this)" class="mintbird">
+                          <img src="/assets/images/bird_mouth.png" class="newstamp"></img>
+                        </div>  
+                        <div onclick="selectBird(this)" class="mintbird">
+                          <img src="/assets/images/bird_feet.png" class="newstamp"></img>
+                        </div>  
+                        <div onclick="selectBird(this)" class="mintbird">
+                            <img src="/assets/images/bird_closed.png" class="newstamp"></img>
+                          </div>  
+                    </div>
+                    <div onclick="mintBird()" class="roundedButton button" style="margin: 10px auto;">Mint!</div>
+                    CPMS Gas Station is powered by users & maintained by us.
+                    <br>
+                    <br>
+                    <div class="pricetag" style="top:10px;right:10px;line-height: 16px;color: #00000091;border-color:#00000091;">50 Canto!</div>
+
+                    40 Canto of each mint goes back into the community gas pool, 
+                    <br> and 10 Canto goes towards maintenance of our services.
+                </div>
+            </div>
+
+        </div>
+    </div>   
+        
+    <div id="gasmodal_wrap" class="darkmodalwrap">
+        <div class="simplemodal_message">
+            <img src="/assets/images/logo_mouth.png" alt="message" style="margin-right:16px">
+            <div id="gasmessage">Requesting gas...</div>
+        </div>
+    </div>
+    <div id="mintmodal_wrap" class="darkmodalwrap">
+        <div class="simplemodal_message">
+            <img src="/assets/images/logo_mouth.png" alt="message" style="margin-right:16px">
+            <div id="mintmessage">Requesting gas...</div>
+        </div>
+    </div>
+    <script src="/assets/js/gas.js"></script>
+
+</body>
+</html>
