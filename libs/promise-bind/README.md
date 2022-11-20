@@ -1,0 +1,1 @@
+# Monadic methods in Promise
