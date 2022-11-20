@@ -1,0 +1,75 @@
+$body-bg: #000;
+$body-color: #999;
+$font-family-base: "Modeseven", monospace;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;800&display=swap');
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "components/index";
+@import "pages/index";
+
+@font-face {
+    font-family: Modeseven;
+    src: url("../fonts/modeseven.ttf");
+}
+
+body {
+    font-weight: 300;
+}
+
+a {
+    color: $body-color;
+
+    &:hover {
+        color: #06fc99;
+        text-decoration: underline !important;
+    }
+}
+
+small,
+.small {
+    font-size: .8rem;
+}
+
+.text-muted {
+    color: #676767 !important;
+}
+
+.navbar {
+    .navbar-brand {
+        font-weight: 600;
+    }
+}
+
+strong,
+b,
+.fw-bold {
+    font-weight: 400 !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 200;
+}
+
+p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@import 'react-big-calendar/lib/sass/styles';
+
+.dune-iframe {
+    background-color: #f4f4f4;
+    border-radius: .25rem;
+    padding: .25rem;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.text-green {
+    color: #0f0;
+}

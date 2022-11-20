@@ -1,0 +1,21 @@
+table {
+    thead {
+        tr {
+            th {
+                color: #fff;
+                font-weight: 400;
+                border-bottom-width: 2px !important;
+                border-color: rgba(255, 255, 255, .1);
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                border-bottom-width: 2px !important;
+                border-color: rgba(255, 255, 255, .1);
+            }
+        }
+    }
+}

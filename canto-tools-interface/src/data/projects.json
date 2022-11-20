@@ -1,0 +1,279 @@
+{
+  "altomarket": {
+    "id":"altomarket",
+    "name": "Alto Market",
+    "description": "Free Public NFT Market Infrastructure",
+    "category": "NFT",
+    "logo": "altomarket.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/AltoMarket"
+    },
+    "duneQueryEmbeds": ["https://dune.com/embeds/1182395/2023931/e7ecdd5d-cfe9-4fba-915e-7b6baebee455"]
+  },
+  "alyst": {
+    "id": "alyst",
+    "name": "Alyst",
+    "description": "Offchain Governance",
+    "category": "Governance",
+    "logo": "alyst.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/alyst_xyz"
+    }
+  },
+  "cantillionaires": {
+    "id": "cantillionaires",
+    "name": "Cantillionaires",
+    "description": "",
+    "category": "NFT",
+    "logo": "cantillionaires.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/Cantillionaires"
+    }
+  },
+  "canto_moon": {
+    "id": "canto_moon",
+    "name": "CantoMoon",
+    "description": "",
+    "category": "Meme coin",
+    "logo": "cantomoon.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/Canto_Moon"
+    }
+  },
+  "cantofinance": {
+    "id": "cantofinance",
+    "name": "Canto Finance",
+    "description": "DeFi Protocol",
+    "category": "DeFi",
+    "logo": "cantofinance.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/CantoFinance"
+    }
+  },
+  "cantogameoflife": {
+    "id": "cantogameoflife",
+    "name": "Canto Game of Life",
+    "description": "",
+    "category": "Games",
+    "logo": "cantogameoflife.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/CantoGameOfLife"
+    }
+  },
+  "cantoinu": {
+    "id": "cantoinu",
+    "name": "Canto Inu",
+    "description": "",
+    "category": "Meme coin",
+    "logo": "cantoinu.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/CantoInu"
+    }
+  },
+  "cantolongnecks": {
+    "id": "cantolongnecks",
+    "name": "Canto Longnecks",
+    "description": "Home of the $Canto Longnecks Herd.",
+    "category": "NFT",
+    "logo": "cantolongnecks.jpg",
+    "website": "https://cantolongnecks.com",
+    "socials": {
+      "twitter": "https://twitter.com/cantolongnecks"
+    }
+  },
+  "cantoswapfi": {
+    "id": "cantoswapfi",
+    "name": "CantoSwap",
+    "description": "",
+    "category": "DEX",
+    "logo": "cantoswap.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/cantoswapfi"
+    }
+  },
+  "cantotoons": {
+    "id": "cantotoons",
+    "name": "Canto Toons",
+    "description": "Canto Toons are fulfillling the Canto mission.",
+    "category": "NFT",
+    "logo": "cantotoons.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/CantoToonsNFT"
+    }
+  },
+  "cpms": {
+    "id": "cpms",
+    "name": "CPMS:// Canto Public Messaging Service",
+    "description": "Public Messaging Service.",
+    "category": "Infrastructure",
+    "logo": "cpms.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/CantoMessenger"
+    }
+  },
+  "dnsforcanto": {
+    "id": "dnsforcanto",
+    "name": "Canto Name Service",
+    "description": "Name Service on Canto.",
+    "category": "NFT",
+    "logo": "cns.jpg",
+    "website": "https://cantodomainname.substack.com",
+    "socials": {
+      "twitter": "https://twitter.com/DNSFORCANTO"
+    }
+  },
+  "encantowetrust": {
+    "id": "encantowetrust",
+    "name": "Encanto",
+    "description": "Rewards engine for ForteSwap liquidity providers",
+    "category": "DeFi",
+    "logo": "encanto.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/EncantoWeTrust"
+    }
+  },
+  "evilrabbitcanto": {
+    "id": "evilrabbitcanto",
+    "name": "Evil Rabbit",
+    "description": "",
+    "category": "Meme coin",
+    "logo": "evilrabbit.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/EvilRabbitCanto"
+    }
+  },
+  "forteswap": {
+    "id": "forteswap",
+    "name": "Forteswap",
+    "description": "",
+    "category": "DEX",
+    "logo": "forteswap.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/forteswap"
+    }
+  },
+  "happyrabbitcoin": {
+    "id": "happyrabbitcoin",
+    "name": "Happy Rabbit",
+    "description": "",
+    "category": "Meme coin",
+    "logo": "happyrabbit.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/HappyRabbitCoin"
+    }
+  },
+  "itsbambooapp": {
+    "id": "itsbambooapp",
+    "name": "Bamboo",
+    "description": "Canto’s NFT gallery",
+    "category": "NFT",
+    "logo": "bamboo.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/itsbambooapp"
+    }
+  },
+  "kantogame": {
+    "id": "kantogame",
+    "name": "KantoGame",
+    "description": "Explore Kanto, find and battle its creatures, capture and collect them.",
+    "category": "NFT",
+    "logo": "kantogame.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/KantoGame",
+      "discord": "https://t.co/BSRrN1i6lI"
+    }
+  },
+  "magnetart": {
+    "id": "magnetart",
+    "name": "Magnet",
+    "description": "Magnet is the magic wand of NFTs. The boundaries will never be the same. Get ready to become a magnet 🧲",
+    "category": "NFT",
+    "logo": "magnetart.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/magnet__art"
+    }
+  },
+  "nftiify": {
+    "id": "nftiify",
+    "name": "nftiify",
+    "description": "",
+    "category": "NFT",
+    "logo": "nftiify.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/nftiify"
+    }
+  },
+  "promptnft": {
+    "id": "promptnft",
+    "name": "Pompt",
+    "description": "Crowdsource prompts – build art and an audience with AI-generated NFTs",
+    "category": "NFT",
+    "logo": "prompt.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/PromptNFT"
+    }
+  },
+  "spirit_swap": {
+    "id": "spirit_swap",
+    "name": "Spirit Swap",
+    "description": "",
+    "category": "DEX",
+    "logo": "spiritswap.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/Spirit_Swap"
+    }
+  },
+  "tandemsig": {
+    "id": "tandemsig",
+    "name": "TandemSig",
+    "description": "Multisig wallet on Canto network powered by Gnosis Safe",
+    "category": "Infrastructure",
+    "logo": null,
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/TandemSig"
+    }
+  },
+  "thoth": {
+    "id": "thoth",
+    "name": "Thoth",
+    "description": "Legally-binding agreements are a need in the DAO to DAO (D2D) ecosystem.",
+    "category": "DeFi",
+    "logo": "thoth.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/0xTh0th"
+    }
+  },
+  "y2r_finance": {
+    "id": "y2r_finance",
+    "name": "Y2R Finance",
+    "description": "Auto harvest protocol",
+    "category": "DeFi",
+    "logo": "y2r.jpg",
+    "website": null,
+    "socials": {
+      "twitter": "https://twitter.com/Y2R_Finance"
+    }
+  }
+}
