@@ -1,0 +1,25 @@
+diff --git a/src/chains/testnet/canto.json b/src/chains/testnet/canto.json
+new file mode 100644
+index 0000000..65625a2
+--- /dev/null
++++ b/src/chains/testnet/canto.json
+@@ -0,0 +1,19 @@
++{
++  "chain_name": "canto",
++  "api": ["https://node1.canto.ansybl.io", "https://node2.canto.ansybl.io"],
++  "rpc": ["https://34.27.34.118:26657", "https://34.171.23.136:26657"],
++  "snapshot_provider": "",
++  "sdk_version": "0.45.6",
++  "coin_type": "60",
++  "min_tx_fee": "800",
++  "addr_prefix": "canto",
++  "logo": "/logos/canto.png",
++  "assets": [
++    {
++      "base": "acanto",
++      "symbol": "CANTO",
++      "exponent": "18"
++    }
++  ]
++}
++
