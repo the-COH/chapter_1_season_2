@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+:root {
+    font-family: "Source Code Pro", "Courier New", Courier, monospace !important;
+}
+
+.App {
+    text-align: center;
+    min-height: 100vh;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+h1 {
+    font-family: "Source Code Pro", "Courier New", Courier, monospace !important;
+    color: #39ff14;
+    text-shadow: 0 0 3px rgb(45, 73, 48), 0 0 5px rgb(45, 73, 48), 0 0 10px rgb(45, 73, 48), 0 0 20px #39ff14, 0 0 40px #39ff14, 0 0 48px #39ff14, 0 0 50px #0fa, 0 0 60px #39ff14;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.board-wrapper {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.board-box {
+    margin: 0 1rem;
+}
+
+.board-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.board-item {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    font-family: "Source Code Pro", "Courier New", Courier, monospace;
+    transition: background 300ms ease-in-out;
+}
+
+.board-item-btn {
+    width: 64px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    font-family: "Source Code Pro", "Courier New", Courier, monospace;
+    align-items: center;
+    margin: 4px;
+}
+
+.board-bottom {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: 0rem auto;
+    display: flex;
+    font-family: "Source Code Pro", "Courier New", Courier, monospace;
+    justify-content: center;
+}
+
+.board-bottom-item {
+    display: flex;
+    margin: 0 8px;
+}
+
+.bottom-item {
+    width: 100px;
+    height: 50px;
+    margin: 0 8px;
+    font-family: "Source Code Pro", "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circ-roul {
+    display: flex;
+    justify-content: center;
+}
+
+.full-item {
+    font-family: "Source Code Pro", "Courier New", Courier, monospace;
+    width: 200px;
+}
+
+.bg-blackneon {
+    backdrop-filter: blur(4px) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn {
+    font-family: "Source Code Pro", "Courier New", Courier, monospace;
+}

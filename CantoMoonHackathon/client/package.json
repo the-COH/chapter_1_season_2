@@ -1,0 +1,37 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "alchemy-sdk": "^2.0.4",
+    "ethers": "^5.7.0",
+    "js-ipfs-fetch": "^4.2.3",
+    "mathjs": "^11.2.1",
+    "mdb-react-ui-kit": "^4.2.0",
+    "node-fetch": "^3.2.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-native-fetch-api": "^3.0.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/node": "^18.11.0",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@uniswap/sdk-core": "^3.0.2",
+    "@uniswap/v3-sdk": "^3.9.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0"
+  }
+}

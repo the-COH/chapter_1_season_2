@@ -1,0 +1,15 @@
+{
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "100x100",
+      "src": "favicon.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "Carbon",
+  "short_name": "Carbon",
+  "start_url": ".",
+  "theme_color": "#000000"
+}

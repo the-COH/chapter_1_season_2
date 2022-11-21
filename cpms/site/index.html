@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>CPMS</title>
+
+</head>
+<body>
+    <nav>
+        <div class="navcont">
+            <a href="/" class="nav_left">
+                <img src="/assets/images/bird_feet.png" class="nav_logo"/>
+                <span id="logoTitle"> Canto Public <br> Messaging Service </span>
+            </a>
+
+            <div class="nav_buttons">
+                <div class="nav_transfer_buttons">
+                    <div id="inboxBtnwrap" class="nav_button inbox" onclick="connectWallet()">
+                        <div id="inboxStatus">Connect</div>
+                        <div id="inboxCount">10</div>
+                    </div>
+                    <a href="/"class="nav_button">Write</a>
+                    <a href="/transfer"class="nav_button">Transfer</a>
+                </div>
+                <div class="nav_utility_buttons">
+                    <a href="/gas" class="nav_button">Gas Station</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="maincontainer">
+        <div class="main">
+            <div class="main_info">
+                <div class="main_title">Send a Message on Canto Public</div>
+                <div class="main_desc">Your message, forever on the blockchain</div>
+            </div>
+            <div class="main_form">
+                <div class="form_messagewrapper">
+                    <div class="recipientWrap">
+                        <div id="recipientFinalTitle" class="smalltitle">Dear</div>
+                        <div id="addAddressBtn" onclick="showAddressInputs()">Edit Recipient</div>
+                    </div>
+                    <div onclick="showStampSelection()" id="finalStampWrap" class="stamp-border" data-before="Add a stamp">
+                        <img src="" id="finalstamp"></img>
+                    </div>
+                    <div class="inputcontainer">
+                        <textarea id="messageInput" maxlength="222" name="message" placeholder="I Canto live without you."></textarea>
+                        <div class="lettercount" id="charCountWrap"><span id="charCount">0</span>/222</div>
+                    </div>
+                    <div id="sendMessageBtn" onclick="sendMessage()" class="sendMessageBtn button noselect">Send</div>
+                </div>
+
+            </div>
+        </div>
+    </div>   
+    <div class="previewModalWrap">
+        <div class="previewModal_inner">
+            <img class="fullPreviewMessage" src="/assets/images/message.png" alt="message">
+        </div>
+    </div>
+
+    <div id="recipientmodal_wrap" class="modalWrap">
+        <div class="inputborder">
+            <div class="recipientModal">
+                <div class="recipientModal_recipient">
+                    <div class="recipientModal_name">Name:
+                        <input id="recipientName1" placeholder="Enter Name..." type="text">
+                    </div>
+                    <div class="recipientModal_Address">
+                        Address:
+                        <input id="recipientAddress1" placeholder="0x000..." type="text">
+                    </div>
+                </div>
+                <div class="recipientButtons">
+                    <div onclick="addSingleRecipient()" class="roundedButton button noselect" style="margin-top: 20px;">Confirm</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="stampmodal_wrap" class="modalWrap">
+        <div class="bluestripeborder">
+            <div class="stampmodal">
+                <div class="stampmodaltitle">The originals</div>
+                <div class="stampsubtitle">Please select a stamp</div>
+                <div class="pricetag">Only 2 Canto!</div>
+                <div class="stampgrid">
+                    <div class="stamp">
+                      <img onclick="updateStamp('/assets/images/stamps/1.png')" src="/assets/images/stamps/1.png" class="newstamp"></img>
+                      <div class="stamptitle">Hvítserkur</div>
+                    </div>  
+                    <div class="stamp">
+                      <img onclick="updateStamp('/assets/images/stamps/2.png')" src="/assets/images/stamps/2.png" class="newstamp"></img>
+                      <div class="stamptitle">Peace and Quiet</div>
+                    </div>  
+                    <div class="stamp">
+                      <img onclick="updateStamp('/assets/images/stamps/3.png')" src="/assets/images/stamps/3.png" class="newstamp"></img>
+                      <div class="stamptitle">Memories</div>
+                    </div>  
+                    <div class="stamp">
+                      <img onclick="updateStamp('/assets/images/stamps/4.png')" src="/assets/images/stamps/4.png" class="newstamp"></img>
+                      <div class="stamptitle">I miss you</div>
+                    </div>  
+                    <div class="stamp">
+                      <img onclick="updateStamp('/assets/images/stamps/5.png')" src="/assets/images/stamps/5.png" class="newstamp"></img>
+                      <div class="stamptitle">Breathe</div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="transactionmodal_wrap" class="darkmodalwrap">
+        <div class="transactiomessage_modal">
+            <img src="/assets/images/logo_mouth.png" alt="message" style="margin-right:16px">
+            <div id="transactionmessage">Sending Your Message...</div>
+        </div>
+    </div>
+
+
+    <div class="tickerwrap">
+        <div class="ticker">
+            <img src="/assets/images/logo_mouth.png" alt="message" style="height:40px; margin-right:20px">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/message.png" alt="message" class="previewMessageIcon">
+            <img src="/assets/images/logo_mouth.png" alt="message" style="height:40px">
+        </div>
+
+     
+    </div>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+</html>

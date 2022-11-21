@@ -1,0 +1,906 @@
+@font-face {
+    font-family: "Tox";
+    src: url("/assets/fonts/tox.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "Modern";
+    src: url("/assets/fonts/modern.ttf") format("truetype"); 
+}
+
+:root{
+    --background-color:#e9e1d4;
+    --stampcolor:#e7e7e7
+}
+* {
+list-style:none;
+margin:0;
+outline:none;
+padding:0;
+text-decoration:none;
+-webkit-box-sizing: border-box;
+box-sizing:border-box;
+}
+
+html{
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+
+body{
+font-family: "Tox";
+height:100%;
+width: 100%;
+background-color:var(--background-color);
+
+text-rendering: optimizeLegibility;
+font-size: 24px;
+
+}
+a{
+    color: inherit;
+}
+.noselect {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+ -khtml-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+
+.centermodal{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.modalWrap{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    position: absolute;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.navcont{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 180px;
+    align-items: center;
+    padding: 0 20px;
+
+}
+    .nav_buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav_button{
+        margin-left: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: color .25s ease;
+    }
+    .nav_button:hover{
+        color: #046d8b;
+        text-decoration: underline;
+    }
+    .nav_transfer_buttons{
+        display:flex
+    }
+    .nav_utility_buttons{
+        display:flex;
+        margin-top: 4px;
+    }
+    .nav_left{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        cursor:pointer
+    }
+    .nav_logo{
+        width: 100px;
+        padding-right: 20px;
+    }
+.inbox{
+    position: relative;
+}
+#inboxCount {
+    align-items: center;
+    display: none;
+    justify-content: center;
+    background-color: #ae2814;
+    color: rgb(255, 255, 255);
+    border-radius: 9999px;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: -2px;
+    right: -29px;
+    font-size: 14px;
+}
+    .button{
+    background: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: fit-content;
+    font-size: 18px;
+    height: 40px;
+}
+.maincontainer{
+    position: absolute;
+    height: calc(100vh - 180px);
+    width: 100vw;
+    top: 180px;
+    left: 0;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+    .main{
+        /* background: pink; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+    }
+    .main_presentation{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+        /* width: 600px; */
+    }
+    /* .main_info div{
+        margin-bottom: 5px;
+        padding: 10px;
+    } */
+        .main_title{
+            font-size: 24px;
+            padding:10px;
+            /* position: absolute;
+            top: 90px;   */
+        }
+        .main_desc{
+            font-size: 16px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .main_desc_transfer_wrap{
+        /* background-image: repeating-linear-gradient(
+            -45deg, 
+            white, 
+            white 20px, 
+            #135f91 20px, 
+            #135f91 40px, 
+            white 40px, 
+            white 60px,
+            #135f91 60px, 
+            #135f91 80px
+            ); */
+            background: #135f91;
+            height: 100%;
+            width: 440px;
+            padding: 10px;
+            margin-right: 10px;
+            /* width: 510px; */
+            /* box-shadow: 4px 4px #bcb9b2; */
+        }
+
+        .main_desc_transfer{
+            position: relative;
+
+            font-size: 16px;
+            text-align: center;
+            line-height: 22px;
+            background: #fffbf4;
+            border: 1px;
+            border: 1px solid black;
+            /* margin-bottom: 10px; */
+            padding: 30px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            /* margin-right: 10px; */
+        }
+        .main_desc_mint{
+            position: relative;
+            min-height: 220px;
+            width: 510px;
+
+            font-size: 16px;
+            text-align: center;
+            line-height: 22px;
+            background: #fffbf4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 30px;
+            border: 1px solid black;
+        }
+    .main_form{
+        position: relative;
+       border: 1px solid black;
+       background-image: repeating-linear-gradient(
+        -45deg, 
+        white, 
+        white 20px, 
+        #ae2814 20px, 
+        #ae2814 40px, 
+        white 40px, 
+        white 60px,
+        #135f91 60px, 
+        #135f91 80px
+        );
+        padding: 10px;
+        width: 510px;
+        box-shadow: 4px 4px #bcb9b2;
+    }
+    .main_form label{
+        font-size: 20px;
+    }
+    .form_messagewrapper{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+
+    }
+    .recipientWrap{
+        display: flex;
+        margin-top: 53px;
+        margin-bottom: 10px;
+        height: 20px;
+        align-items: flex-end;
+    }
+    .transferInputWrap{
+        display: none;
+        margin-top: 53px;
+        margin-bottom: 10px;
+        height: 99px;
+        align-items: center;
+        background:white;
+        /* width: 380px; */
+        margin: 30px 10px;
+        padding: 20px;
+        border: 1px solid black;
+        /* margin-bottom: 60px; */
+    }
+    #transferConnectWallet{
+        display: flex;
+        margin-top: 53px;
+        margin-bottom: 10px;
+        height: 99px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .transferinput_input{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.217);
+        width: 100%;
+        font-family:inherit;
+    }
+    .smalltitle{
+        font-size:18px
+    }
+    #addAddressBtn{
+        margin-left: 10px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+    #addAddressBtn:hover{
+        color:black
+    }
+
+    #messageRecipient{
+        width: 100%;
+        border: none;
+        border-bottom:1px solid #00000026;
+        font-family: inherit;
+        margin-left: 10px;
+        width: fit-content;
+        font-size: 20px;
+    }
+    .waves{
+        position: absolute;
+        right: 5px;
+        margin-right: 60px;
+    }
+    .waves{
+        position: absolute;
+        right:-25px;
+        top: 0;
+    }
+    .stamp-border::before{
+        position: absolute;
+        content: attr(data-before);
+        width: 48px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #8a8a8a;
+        font-size: 15px;
+        line-height: 14px;
+        text-align: center;
+        cursor:pointer;
+        padding: 0.25rem;
+    }
+    .stamp-border:active .stamp-border::before{
+        opacity:0.6
+    }
+    #finalstamp{
+        position: relative;
+        right: 3px;
+        transition: opacity 5.3s ease;
+    }
+    #finalStampWrap:hover{
+        opacity:0.7
+    }
+    .stamp-border {
+        width: 56px;
+        height: 73px;
+        position: absolute;
+        right: 30px;
+        top: 27px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='1%2c 6' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+        }
+    .stamp-border.hidden{
+        background-image: none
+    }
+    .stamp-border:hover::before{
+        color: black;
+    }
+
+    .letterspacing{
+        font-family: verdana;
+        letter-spacing: -4px;
+        font-size: 24px;
+        margin-bottom: -17px;
+        margin-bottom: -18px;
+        color: rgba(0, 0, 0, 0.55);
+        }
+        .inputcontainer{
+            /* display: flex; */
+            /* justify-content: center; */
+            align-items: center;
+            /* margin-top: 20px;s */
+        }
+        .inputcontainer textarea{
+            font-size: 18px;
+            font-family: inherit;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            height: 167px;
+            width: 100%;
+            resize: none;
+            letter-spacing: 0.02rem;
+            padding: 10px;
+
+        }
+        .lettercount{
+            font-size: 15px;
+            text-align: end;
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            margin-bottom: 10px;
+        }
+        .sendMessageBtn{
+            background: black;
+            color: white;
+            margin-left: auto;
+            transition: background .05s ease;
+            cursor: pointer;
+        }
+        .sendMessageBtn:hover{
+            background: white;
+            border: 1px solid black;
+            color: black;
+        }
+        .sendMessageBtn:active{
+            background: black;
+            color: white;   
+        }
+
+.previewModalWrap{
+    background: rgba(0, 0, 0, 0.841);
+    transition: all .42s ease;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.previewModalWrap.show{
+    opacity: 1;
+    display: "flex" !important;
+}
+.fullPreviewMessage{
+    margin-bottom:-50vh;
+    transition: all .12s ease;
+    opacity: 1;
+}
+.fullPreviewMessage.show{
+    transition: all .5s cubic-bezier(0.14,1.3, .14, 1);
+    margin-bottom: 0;
+    opacity: 1;
+}
+.tickerwrap {
+    position: fixed;
+    bottom: 20px;
+    transition: all .15s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    /* z-index: 1000; */
+  }
+
+  .ticker { 
+    display: flex; 
+    height:100%;
+    transition: all .15s ease;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  
+  .previewMessageIcon {
+    flex-shrink: 0;
+    width: fit-content;
+    box-sizing: border-box;
+    /* padding: 10px; */
+    height: 40px;
+    width: auto;
+    text-align: center;
+    padding-right:20px;
+    display: flex;
+    align-items: center;
+  }
+  .previewMessageIcon:hover{
+    opacity: 0.7;
+} 
+
+  @keyframes tickerh {
+    0% { transform: translate3d(100vw, 0, 0); }
+    100% { transform: translate3d(-100vw, 0, 0); }
+  }
+  .ticker { animation: tickerh linear 26s infinite; }
+  .ticker:hover { animation-play-state: paused; }
+
+  #stampmodal_wrap{
+    display: none;
+    background: rgba(0, 0, 0, 0.58);
+  }
+  .bluestripeborder{
+        /* background-image: repeating-linear-gradient(
+         -45deg, 
+         white, 
+         white 20px, 
+         #135f91 20px, 
+         #135f91 40px, 
+         white 40px, 
+         white 60px,
+         #135f91 60px, 
+         #135f91 80px
+         ); */
+         background: #135f91;
+         padding: 10px;
+  }
+  .inputborder{
+    border: 1px solid black;
+    padding: 10px;
+    background: white;
+  }
+  .stampmodal{
+    width: 340px;
+    height: 450px;
+    background: white;
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+  .stampmodaltitle{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.stampsubtitle{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .stampgrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stamptitle{
+    font-size: 12px;
+  }
+  .stamp{
+    width: 80px;
+    margin: 5px 5px 8px 5px;
+    text-align: center;
+    cursor:pointer;
+  }
+  .stamp:hover .stamptitle{
+    text-decoration: underline;
+  }
+  .mintBirdGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 456px;
+    margin-top: 20px;
+  }
+  .mintbird{
+    padding: 5px;
+    /* width: 80px; */
+    margin: 5px 5px 8px 5px;
+    text-align: center;
+    cursor:pointer;
+    border: 1px solid black;
+    background: white;
+  }
+  .mintbird.selected{
+    /* border-color:blue; */
+    background: #135f913c;
+  }
+  .mintbird:hover{
+    text-decoration: underline;
+  }
+  .transfernft{
+    display: flex;
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    background: white;
+  }
+  .transfernft:hover{
+    border:1px solid blue;
+    }
+  .transfernft.selected{
+    /* border-color:blue; */
+    background: #135f913c;
+  }
+  .transferWrap{
+    display: none;
+  }
+  .pricetag{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(12deg);
+    text-align: center;
+  }
+
+  /* recipient addresses */
+  #recipientmodal_wrap{
+    display: none;
+    background: rgba(0, 0, 0, 0.58);
+    font-size: 20px;
+    z-index: 2000;
+  }
+    .recipientModal{
+        /* width: 340px;
+        height: 450px; */
+        position: relative;
+        background: white;
+        padding: 50px 50px 40px 50px;
+        border: 1px solid black;
+
+    }
+    .recipientModal input{
+        border:none;
+        border-bottom: 1px solid black;
+        font-family: inherit;
+        font-size:17px;
+        width: 230px;
+    }
+        input::-webkit-input-placeholder { /* Edge */
+        color: rgba(0, 0, 0, 0.164);
+         }
+      
+      input::-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgba(0, 0, 0, 0.164);
+      }
+      
+      input::placeholder {
+        color: rgba(0, 0, 0, 0.164);
+      }
+    .recipientModal_recipient div{
+        display: flex;
+        justify-content: space-between;
+        width: 330px;
+    }
+    .recipientModal_name{
+        display: flex;
+    justify-content: space-between;
+    }
+    .roundedButton{
+        background: black;
+        color: white;
+        margin-left: auto;
+        transition: background .05s ease;
+        cursor: pointer;
+    }
+    .roundedButton:hover{
+        background: white;
+        border: 1px solid black;
+        color: black;
+    }
+    .roundedButton:active{
+        background: black;
+        color: white;   
+    }
+    .recipientButtons{
+        display: flex;
+        justify-content: end;
+    }
+    #addMoreRecipients{
+        position: absolute;
+        left: 50px;
+        bottom: 42px;
+        background: white;
+        color: black;
+        border: 1px solid black;
+    }
+    #addMoreRecipients:hover{
+        background: black;
+        color: white;
+        border: 1px solid white;
+    }
+    #addMoreRecipients:active{
+        opacity: 0.6;
+    }
+
+    /* finalNft */
+    .darkmodalwrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.606);
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000000;
+    }
+    #transactionmodal_wrap{
+        display: none;
+    }
+    .transactiomessage_modal{
+        background: #e9e1d4;
+        padding: 40px 50px;
+        border: 5px solid white;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    .simplemodal_message{
+        background: #e9e1d4;
+        padding: 40px 50px;
+        border: 5px solid white;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    #gasmodal_wrap{
+        display: none;
+    }
+    #transactionmodal_wrap{
+        display: none;
+    }
+    #mintmodal_wrap{
+        display: none;
+    }
+    
+    /* coins */
+    .coin{
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .coinAmount{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .coinAmount .roundedButton{
+        margin-left: 50px;
+    }
+
+    .dropdownwrap{
+        position: relative;
+        height: 180px;
+    }
+    .dropdown {
+        position: relative;
+        background: white;
+        color: black;
+        border: 1px solid black;
+        border-bottom: 0;
+        z-index: 100;
+    }
+    .dropdown:hover{
+        border-bottom: 1px solid black;
+    }
+    
+    .dropdown__trigger {
+        border-bottom:1px solid black;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+    
+    /* Hide the dropdown's content by default */
+    .dropdown__content {
+        display: none;
+        left: 0;
+        /* padding-top: 0.25rem; */
+        position: relative;
+        top: 100%;
+        /* padding: 10px; */
+        /* background-color: #fff; */
+        z-index: 9999;
+    }
+    .dropdown__elm{
+        padding: 10px;
+        cursor: pointer;
+    }
+    .dropdown__elm:hover{
+        background: #39708642;
+        color: black;
+        user-select: none;
+    }
+    .dropdown__elm:active{
+        background: white;
+        color: rgba(0, 0, 0, 0.262);
+    }
+    /* Show the content when hover on the container */
+    .dropdown:hover .dropdown__content {
+        display: block;
+    }
+    .stats{
+        /* position: absolute;
+        top: 50px; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: white;
+    }
+    .amountwrap{
+        display: flex;
+    }
+    #amountAvailable{
+        display: none;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .amountToSend{
+        margin-left: 10px;
+    }
+    .transferReady{
+        position: absolute;
+        top: 43px;
+        }
+.transferWrap2s{
+    display: none;
+    margin-top: 10px;
+    /* margin-bottom: 40px; */
+}
+
+#transferChoice{
+    display: none;
+    flex-direction: column;
+}
+.transferChoice_title{
+    margin-top: 27px;
+}
+.assetOptions{
+    display: flex;
+}
+.assetOptions .roundedButton{
+    margin: 10px;
+    width: 73px;
+}
+.roundedButton.disabled{
+    opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+.main_form{
+    width: 100vw;
+}
+#logoTitle{
+    display:none
+}
+.tickerwrap{
+    display: none;
+}
+.navcont{
+    padding: 0 20px;
+}
+.transactiomessage_modal,.simplemodal_message{
+    width: 100vw;
+}
+.main_desc_transfer_wrap{
+    width: 100vw;
+    margin-bottom: 10px;
+    padding: 5px 4px;
+}
+.main_desc_mint{
+    min-height: unset;
+    width: 100vw;
+    padding: 40px 50px;
+}
+.main_presentation{
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+}
+.pricetag{
+    height: 50px;
+    width: 50px;
+    font-size: 12px;
+}
+.mintBirdGrid{
+    width: unset;
+}
+.darkmodalwrap{
+    position: fixed;
+}
+}

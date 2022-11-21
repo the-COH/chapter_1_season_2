@@ -1,0 +1,19 @@
+{
+	"name": "carbon",
+	"version": "1.0.0",
+	"description": "EVM Package manager",
+	"main": "index.ts",
+	"license": "Proprietary",
+	"private": true,
+	"scripts": {},
+	"workspaces": [
+		"app",
+		"libs/*",
+		"contracts/*",
+		"utils/*"
+	],
+	"devDependencies": {
+		"eslint": "^8.0.0",
+		"eslint-config-carbon": "^1.0.0"
+	}
+}

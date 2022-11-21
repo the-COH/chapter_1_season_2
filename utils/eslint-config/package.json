@@ -1,0 +1,24 @@
+{
+	"name": "eslint-config-carbon",
+	"version": "1.0.0",
+	"license": "Proprietary",
+	"private": true,
+	"type": "commonjs",
+	"exports": {
+		".": "./.eslintrc.json"
+	},
+	"peerDependencies": {
+		"eslint": "^8.0.0"
+	},
+	"scripts": {
+		"test": "echo hello"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.41.0",
+		"@typescript-eslint/parser": "^5.41.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-react": "^7.31.10",
+		"eslint-plugin-react-hooks": "^4.6.0"
+	}
+}
