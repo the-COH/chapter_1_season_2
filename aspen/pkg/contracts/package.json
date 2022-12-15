@@ -1,0 +1,23 @@
+{
+  "name": "@monaxlabs/ddk-contracts",
+  "version": "0.0.0",
+  "packageManager": "yarn@3.2.4",
+  "scripts": {
+    "build": "tsc",
+    "generate:typechain": "typechain --out-dir=src/types --target=ethers-v5 abis/* --show-stack-traces",
+    "generate:spec": "ts-node cmd/generate-from-spec.ts",
+    "generate": "yarn generate:spec && yarn generate:typechain"
+  },
+  "dependencies": {
+    "io-ts": "^2.2.19",
+    "io-ts-types": "^0.5.19",
+    "monocle-ts": "^2.3.13"
+  },
+  "devDependencies": {
+    "@monaxlabs/ddk-shared": "workspace:pkg/shared",
+    "@typechain/ethers-v5": "^10.1.0",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.4.3"
+  }
+}

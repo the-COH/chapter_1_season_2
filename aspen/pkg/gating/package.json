@@ -1,0 +1,29 @@
+{
+  "name": "@monaxlabs/ddk-gating",
+  "version": "0.0.0",
+  "description": "The Aspen Identity SDK",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "yarn build:ts",
+    "build:ts": "tsc --build",
+    "test": "jest",
+    "fix": "yarn fix:prettier && yarn fix:eslint",
+    "fix:prettier": "prettier --write .",
+    "fix:eslint": "eslint --fix '**/*.ts'",
+    "generate:ts": "npx openapi-typescript-codegen --input ./spec/swagger.json --output ./src/generated --client axios --useOptions",
+    "generate:openapi": "cp ../../node_modules/@monaxlabs/spec/apis/identity.json ./spec/swagger.json",
+    "generate": "yarn generate:openapi && yarn generate:ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "form-data": "^4.0.0",
+    "fp-ts": "^2.12.1",
+    "io-ts": "^2.2.16",
+    "openapi-typescript-codegen": "^0.23.0"
+  }
+}

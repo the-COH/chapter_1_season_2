@@ -1,0 +1,22 @@
+{
+  "name": "@monaxlabs/ddk-claimgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "yarn run graph codegen",
+    "build": "yarn run graph build",
+    "deploy": "yarn run graph deploy --product hosted-service",
+    "deploy:ethereum": "yarn deploy --network mainnet silasdavis/claimgraph-ethereum",
+    "deploy:goerli": "yarn deploy --network goerli silasdavis/claimgraph-goerli",
+    "deploy:polygon": "yarn deploy --network matic silasdavis/claimgraph-polygon",
+    "deploy:mumbai": "yarn deploy --network mumbai silasdavis/claimgraph-mumbai",
+    "test": "yarn run graph test",
+    "generate": "yarn codegen"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.35.0",
+    "@graphprotocol/graph-ts": "0.28.1"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  }
+}

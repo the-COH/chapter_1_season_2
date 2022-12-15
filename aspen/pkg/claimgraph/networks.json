@@ -1,0 +1,26 @@
+{
+  "mainnet": {
+    "CedarDeployer": {
+      "address": "0x90adD8c1f207732fC0a152ac1d49388B2FdFE17D",
+      "startBlock": 16048573
+    }
+  },
+  "matic": {
+    "CedarDeployer": {
+      "address": "0x17468a7fe887aE24bfB8A1f46ec90786F22EF54B",
+      "startBlock": 36086604
+    }
+  },
+  "mumbai": {
+    "CedarDeployer": {
+      "address": "0xcfD7FD69308437f415fB458824b114D5e56AdB7f",
+      "startBlock": 29328879
+    }
+  },
+  "goerli": {
+    "CedarDeployer": {
+      "address": "0x2a9aCC92ab916e0FD80809f3e3C37a0A42141167",
+      "startBlock": 8017196
+    }
+  }
+}

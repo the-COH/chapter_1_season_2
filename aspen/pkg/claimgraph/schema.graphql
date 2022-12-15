@@ -1,0 +1,13 @@
+enum TokenType {
+  ERC1155
+  ERC721
+}
+
+type ClaimBalance @entity {
+  id: ID!
+  contractAddress: String!
+  tokenType: TokenType!
+  receiver: String!
+  tokenId: BigInt!
+  totalClaimed: BigInt!
+}

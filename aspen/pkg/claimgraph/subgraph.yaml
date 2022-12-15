@@ -1,0 +1,64 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: CedarDeployer
+    network: mumbai
+    source:
+      abi: ICedarDeployer
+      address: "0xcfD7FD69308437f415fB458824b114D5e56AdB7f"
+      startBlock: 29328879
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - ClaimBalance
+      abis:
+        - name: ICedarDeployer
+          file: ./abis/ICedarDeployerV10.json
+      eventHandlers:
+        - event: CedarInterfaceDeployed(indexed address,indexed uint256,indexed
+            uint256,uint256,string)
+          handler: handleDeployment
+      file: ./src/cedar-deployer.ts
+templates:
+  - kind: ethereum
+    name: CedarERC721Drop
+    network: mumbai
+    source:
+      abi: CedarERC721Drop
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - ClaimBalance
+      abis:
+        - name: CedarERC721Drop
+          file: ./abis/ICedarERC721DropV6.json
+      eventHandlers:
+        - event: TokensClaimed(indexed uint256,indexed address,indexed
+            address,uint256,uint256)
+          handler: handleTokensClaimed
+      file: ./src/cedar-erc-721-drop.ts
+  - kind: ethereum
+    name: CedarERC1155Drop
+    network: mumbai
+    source:
+      abi: CedarERC1155Drop
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - ClaimBalance
+      abis:
+        - name: CedarERC1155Drop
+          file: ./abis/ICedarERC1155DropV4.json
+      eventHandlers:
+        - event: TokensClaimed(indexed uint256,indexed uint256,indexed
+            address,address,uint256)
+          handler: handleTokensClaimed
+      file: ./src/cedar-erc-1155-drop.ts
